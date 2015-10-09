@@ -10,6 +10,7 @@ function [ x ] = PageRank( i, j, n, p )
 %   param n: Number of nodes
 %   param p: Decay rate (optional)
 %   Note: Node i[k] links to node j[k].
+%   Reference: https://www.mathworks.com/moler/exm/chapters/pagerank.pdf
 
 if (~exist('p', 'var'))
     p = 0.85;
